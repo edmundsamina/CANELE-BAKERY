@@ -1,6 +1,5 @@
 // Getting at the information from the canele database in the collection products (getting all documents)
 export async function getAllListings(client){   
-
     //awaiting the results from the database
     const result = client.db('canele').collection('products').find()
     //The results are recieved as a BJSON, so have to be converted to an Array to be readable.

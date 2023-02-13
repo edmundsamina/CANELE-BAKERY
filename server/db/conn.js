@@ -9,16 +9,3 @@ export const client = new MongoClient(Db, {
   useUnifiedTopology: true,
 });
 
-//object that contains the function that connects to the MongoDb database, and the function that disconnects
-const dbo = {
-  connectToServer: async () => {
-    try {
-      console.log("connecting to client");
-      await client.connect();
-    } catch (e) {
-      console.log(e);
-    }
-  },
-};
-
-export default dbo;

@@ -3,6 +3,7 @@ import { getAllListings, getAllCakeListings, getAllPastryListings, getAllBreadLi
 // The router will be added as a middleware and will take control of requests starting with path /record.
 const productsRouter = express.Router();
 
+//this is from the conn.js file, it is a new instance of a connection to the database 
 import { client } from "../db/conn.js";
 // This section will help you get a list of all the records.
 
