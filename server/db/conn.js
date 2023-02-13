@@ -1,29 +1,24 @@
 import { MongoClient } from "mongodb";
 
-const Db = process.env.ATLAS_URI;
+const Db = process.env.ATLAS_URI || "not using the .env file";
 
-const client = new MongoClient(Db, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
+//creating a new client to manage the connection to the database
+export const client = new MongoClient(Db, {
+  //options to control the connection
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-let _db;
-
+//object that contains the function that connects to the MongoDb database, and the function that disconnects
 const dbo = {
-connectToServer: callback => {
-client.connect(function (err, db) {
-if (db) {
-_db = db.db("canele");
-} else {
-    console.log("no db");
-
-}
-return callback(err);
-});
-},
-getDb: () => {
-return _db;
-},
+  connectToServer: async () => {
+    try {
+      console.log("connecting to client");
+      await client.connect();
+    } catch (e) {
+      console.log(e);
+    }
+  },
 };
 
-export default dbo
+export default dbo;
