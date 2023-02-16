@@ -79,17 +79,20 @@ p, h1, h2, h3, h4, h5, h6 {
   --titleFont: 'Yeseva';
   --textFontLight: 'Grotesk-Light';
   --textFontMedium: 'Grotesk-Medium';
-  --mainHeadingSize: 3.5rem;
+  --mainHeadingSize: 6rem;
   --headingSize: 2.25rem;
-  --subHeadingSize: 1.2rem;
-  --paragraphText: 1rem;
+  --subHeadingSize: 2rem;
+  --paragraphText: 1.4rem;
   --captionSmall: 0.6rem;
 
-
-  
-
-
-
-
+   /* text 1720px*/
+   --titleFont: 'Yeseva';
+   --textFontLight: 'Grotesk-Light';
+   --textFontMedium: 'Grotesk-Medium';
+   --mainHeadingSizeMediumScreen: 5rem;
+   --headingSizeMediumScreen: 1.8rem;
+   --subHeadingSizeMediumScreen: 1.5rem;
+   --paragraphTextMediumScreen: 0.8rem;
+   --captionSmall: 0.6rem;
 
 }

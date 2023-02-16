@@ -1,16 +1,19 @@
 nav{
     display: flex;
     justify-content: space-between;
+    position: absolute;
     align-items: center;
     height:5vh;
-    padding: 0px 10px;
+    width: 100vw;
+    padding: 0px 30px;
 
 }
 
 .nav-links-list{
     display: flex;
     list-style: none;
-    gap:10px;
+    font-size: var(--paragraphText);
+    gap:15px;
     
 }
 
@@ -20,7 +23,7 @@ color: var(--mainDark);
 font-family: var(--textFontMedium);
 }
 
-.nav-link  :hover{
+.nav-link:hover{
     text-decoration: underline;
 }
 
