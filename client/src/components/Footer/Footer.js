@@ -1,4 +1,9 @@
 import React from 'react'
+import facebook from '../../assets/icons/facebook.png'
+import instagram from '../../assets/icons/instagram.png'
+import twitter from '../../assets/icons/twitter.png'
+
+
 
 function Footer() {
   return (
@@ -19,9 +24,9 @@ function Footer() {
         </div>
       </div>
       <div className="socials footer-item">
-        <img></img>
-        <img></img>
-        <img></img>
+        <img className='social-icon' src={facebook} alt='facebook'/>
+        <img className='social-icon' src={instagram} alt='instagram'/>
+        <img className='social-icon' src={twitter} alt='twitter'/>
       </div>
     </footer>
   );

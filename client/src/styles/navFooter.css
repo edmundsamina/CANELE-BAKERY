@@ -63,3 +63,24 @@ footer{
 .footer-email, .footer-location{
     font-size: var(--paragraphText);
 }
+
+.socials{
+    justify-content: flex-end;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon{
+    width: 10%;
+}
+
+@media only screen and (max-width: 1720px) {
+
+    .footer-email, .footer-location{
+        font-size: var(--paragraphTextMediumScreen);
+    }
+      
+
+
+}
