@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5vh;
+    padding: 0px 10px;
+
+}
+
+.nav-links-list{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    
+}
+
+.nav-link a{
+text-decoration: none;
+color: var(--mainDark);
+font-family: var(--textFontMedium);
+}
+
+.nav-link  :hover{
+    text-decoration: underline;
+}
+
+.logo{
+    height:50%
+}
