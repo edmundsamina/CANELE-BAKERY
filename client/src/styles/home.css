@@ -62,7 +62,7 @@ h1{
 
 }
 
-.button:hover, .button:focus{
+.button:hover{
 
     opacity: .75;
 
@@ -133,3 +133,110 @@ h1{
     .about-text-container{
        background-size: 65%;
 }}
+
+
+/* discover section */
+
+.discover-section{
+    display: flex;
+    gap: 30px;
+    padding: 0px 100px;
+    align-items: center;
+    height:95vh;
+    color: var(--mainDark);
+
+}
+
+.discover-text-container, .discover-pastries, .discover-breads, .discover-sweet-endings{
+    height: 65%;
+    width: 30%;
+
+}
+
+.discover-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.discover-text-title{
+    font-family: var(--titleFont);
+    font-weight: 100;
+    font-size: var( --sectionTitleSize);
+    text-align: start;
+    line-height: 1;
+}
+
+.discover-image{
+    width: 100%;
+}
+
+.discover-text-paragraph, .discover-image-subtitle{
+    font-family: var(--textFontMedium);
+    font-size: var(--subHeadingSize);
+}
+
+.discover-text-paragraph{
+text-align: start;
+padding-bottom: 10px;
+width: 90%;
+}
+
+.discover-image-subtitle{
+    text-decoration: underline;
+}
+
+.discover-text-button{
+    width: 70%;
+    height: 15%;
+    font-size: var(--subHeadingSize);
+    font-family: var(--textFontMedium);
+    background-color: var(--mainDark);
+    color: var(--mainBackground);
+    border: none;
+    cursor: pointer;
+}
+
+.discover-text-button:hover{
+    opacity: .75;
+
+}
+
+@media only screen and (max-width: 1720px) {
+    .discover-text-title{
+        font-size: var(--sectionTitleSizeMediumScreen);
+    } 
+    .discover-text-paragraph, .discover-image-subtitle{
+        font-size: var(--subHeadingSizeMediumScreen);
+    
+    
+ }
+}
+
+/*footer-image-section*/
+
+.footer-image-section{
+    background-color: black;
+    
+    height: 80vh;
+}
+
+.footer-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/images/footer-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity:0.6;
+    
+}
+
+.footer-logo{
+height: 50%;
+filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(28deg) brightness(111%) contrast(101%);
+
+}
