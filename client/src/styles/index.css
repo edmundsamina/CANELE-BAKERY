@@ -85,7 +85,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --headingSize: 2.25rem;
   --subHeadingSize: 2rem;
   --paragraphText: 1.4rem;
-  --captionSmall: 0.6rem;
+  --captionSmall: 0.8rem;
 
    /* text 1720px*/
    --titleFont: 'Yeseva';
@@ -96,6 +96,6 @@ p, h1, h2, h3, h4, h5, h6 {
    --headingSizeMediumScreen: 1.8rem;
    --subHeadingSizeMediumScreen: 1.5rem;
    --paragraphTextMediumScreen: 1.1rem;
-   --captionSmall: 0.6rem;
+   --captionSmallMedium: 0.6rem;
 
 }
