@@ -1,0 +1,101 @@
+.shop-section-container{
+    display: flex;    
+    gap: 20px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtering-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 10%;
+    width:80% ;
+}
+
+.all-filter-button, .breads-filter-button, .breads-filter-button, .cakes-filter-button{
+    width: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--paragraphText);
+    font-family: var(--textFontMedium);
+    border: none;
+    cursor: pointer;
+}
+
+.all-filter-button{
+    background-color: var(--mainHighLight);
+    color: var(--mainDark);
+}
+
+.breads-filter-button, .breads-filter-button, .cakes-filter-button{
+    background-color: var(--mainDark);
+    color: var(--mainBackground);
+}
+
+
+.shop-card-container{
+    display: grid;
+    height: 75%;
+    width: 80%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;}
+
+.single-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    height: 90%;
+    width: 70%;
+    background-color: white;
+}
+
+.card-image{
+    width: 90%;
+}
+
+.card-info{
+    display: flex;
+    height: 20%;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-price{
+    line-height: 1;
+    font-family: var(--textFontMedium);
+}
+
+.card-title{
+    font-family: var(--titleFont);
+    font-weight: 100;
+}
+
+.card-button{
+    width: 40%;
+    height: 50%;
+    align-self: flex-end;
+    font-size: var(--captionSmall);
+    font-family: var(--textFontMedium);
+    background-color: var(--mainHighLight);
+    color: var(--mainDark);
+    border: none;
+    cursor: pointer;
+}
