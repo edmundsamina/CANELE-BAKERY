@@ -80,6 +80,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --textFontLight: 'Grotesk-Light';
   --textFontMedium: 'Grotesk-Medium';
   --mainHeadingSize: 6rem;
+  --sectionTitleSize: 4rem;
   --headingSize: 2.25rem;
   --subHeadingSize: 2rem;
   --paragraphText: 1.4rem;
@@ -90,9 +91,10 @@ p, h1, h2, h3, h4, h5, h6 {
    --textFontLight: 'Grotesk-Light';
    --textFontMedium: 'Grotesk-Medium';
    --mainHeadingSizeMediumScreen: 5rem;
+   --sectionTitleSizeMediumScreen: 3rem;
    --headingSizeMediumScreen: 1.8rem;
    --subHeadingSizeMediumScreen: 1.5rem;
-   --paragraphTextMediumScreen: 0.9rem;
+   --paragraphTextMediumScreen: 1.1rem;
    --captionSmall: 0.6rem;
 
 }

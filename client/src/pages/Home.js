@@ -27,7 +27,7 @@ function Home() {
           alt="woman wearing chefs white coat and piping macarons"
         ></img>
         <div className="about-text-container">
-          <h2>Our Story</h2>
+          <h2 className='about-title'>Our Story</h2>
           <p className='about-text'>
             Welcome to our charming French bakery, where we specialize in
             creating delicious pastries, breads, and desserts using traditional
@@ -44,9 +44,7 @@ function Home() {
             providing the most authentic French baking experience in town, and
             we can't wait to share our passion for baking with you. Come visit
             us and experience the delicious taste of our bakery today!
-          </p>
-          <img src={thyme} alt="a sprig of thyme" />
-          
+          </p>          
         </div>
       </section>
     </div>

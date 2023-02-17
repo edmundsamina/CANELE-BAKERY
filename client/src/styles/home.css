@@ -83,24 +83,53 @@ h1{
 /*about*/
 .about-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height:90vh;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .about-image{
-    height:80%;
+    height: 95%;
    
 }
 
 .about-text-container{
+    background-image: url('../assets/images/thyme.png');
+    background-repeat: no-repeat;
+    background-position: bottom right -100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 50px;
     align-items: center;
+    gap: 20px;
 }
 
-.about-text{
-    width:50%
+.about-title{
+    font-family: var(--titleFont);
+    font-size: var(--sectionTitleSize);
+    font-weight: 100;
 }
+.about-text{
+    width:70%;
+    font-family: var(--textFontMedium);
+    font-size: var( --paragraphText);
+}
+
+
+@media only screen and (max-width: 1720px) {
+    .about-title{
+        font-size: var(--sectionTitleSizeMediumScreen);
+    } 
+
+    .about-text{
+        font-size: var( --paragraphTextMediumScreen);
+    
+    
+    }
+
+    .about-text-container{
+       background-size: 65%;
+}}
