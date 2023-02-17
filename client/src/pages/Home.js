@@ -1,7 +1,11 @@
-import React from 'react'
-import aboutImage from '../assets/images/about-image.png'
-import thyme from '../assets/images/thyme.png'
-import '../styles/home.css'
+import React from 'react';
+import '../styles/home.css';
+import aboutImage from '../assets/images/about-image.png';
+import pastries from '../assets/images/home-pastry.png';
+import sweettreats from '../assets/images/home-sweet.png';
+import breads from '../assets/images/home-bread.png';
+import logo from '../assets/images/logo.png'
+
 function Home() {
   return (
     <div className="home-container">
@@ -9,10 +13,7 @@ function Home() {
         <div className="hero-section-text">
           <h1>Maître Canelé</h1>
           <p className="hero-section-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            cursus ligula sit amet nibh tincidunt, id imperdiet elit fermentum.
-            Nunc eget leo non est rhoncus aliquam id sed nulla. Etiam non eros
-            ut erat ultrices commodo.{" "}
+          Our French bakery is a culinary paradise, where every treat is a work of art. We use the finest ingredients and traditional techniques to create exquisite pastries, breads, and desserts that will transport you to the streets of Paris. Come experience our delicious and decadent creations today!{" "}
           </p>
           <div className="button-container">
             <button className="button button-discover">Discover</button>
@@ -25,7 +26,7 @@ function Home() {
           className='about-image'
           src={aboutImage}
           alt="woman wearing chefs white coat and piping macarons"
-        ></img>
+        />
         <div className="about-text-container">
           <h2 className='about-title'>Our Story</h2>
           <p className='about-text'>
@@ -46,6 +47,36 @@ function Home() {
             us and experience the delicious taste of our bakery today!
           </p>          
         </div>
+      </section>
+      <section className='discover-section'>
+      <div className='discover-text-container'>
+      <h3 className='discover-text-title'>FlAVOURS<br/>OF<br/>FRANCE</h3>
+      <p className='discover-text-paragraph'>Paris is a melting pot, as our food can attest. Take a bite and savor la vie délicieuse!</p>
+      <button className='discover-text-button'>Order Now</button>
+      </div>
+
+      <div className='discover-pastries'>
+      <img className="discover-image" src={pastries} alt="basket will with delicious pastries sprinkled with powdered sugar"/>
+      <h4 className="discover-image-subtitle">MOUTHWATERING PASTRIES</h4>
+      </div>
+
+      <div className='discover-breads'>
+      <img className="discover-image"src={breads} alt="dark morrish rye bread on a chopping board, with some slices laying around it"/>
+      <h4 className="discover-image-subtitle">WHOLESOME BREADS</h4>
+
+      </div>
+
+      <div className='discover-sweet-endings'>
+      <img className="discover-image" src={sweettreats} alt="a croissant with chocolate drizzle next to a chai latte, on a table scattered with coffee beans"/>
+      <h4 className="discover-image-subtitle">SWEET ENDINGS</h4>
+
+      </div>
+      </section>
+
+      <section className='footer-image-section'>
+      <div className='footer-image'>
+        <img className='footer-logo'src={logo} alt="curly logo in the shape of a heart"/>
+      </div>
       </section>
     </div>
   );
