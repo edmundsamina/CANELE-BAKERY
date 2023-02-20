@@ -16,7 +16,7 @@
     width:80% ;
 }
 
-.all-filter-button, .breads-filter-button, .breads-filter-button, .cakes-filter-button{
+.all-filter-button, .breads-filter-button, .pastry-filter-button, .cakes-filter-button{
     width: 10%;
     height: 50%;
     display: flex;
@@ -28,14 +28,32 @@
     cursor: pointer;
 }
 
-.all-filter-button{
+.btn-active{
     background-color: var(--mainHighLight);
     color: var(--mainDark);
+      width: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--paragraphText);
+    font-family: var(--textFontMedium);
+    border: none;
+    cursor: pointer;
 }
 
-.breads-filter-button, .breads-filter-button, .cakes-filter-button{
+.btn-inactive{
     background-color: var(--mainDark);
     color: var(--mainBackground);
+      width: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--paragraphText);
+    font-family: var(--textFontMedium);
+    border: none;
+    cursor: pointer;
 }
 
 
