@@ -31,6 +31,7 @@ function Shop() {
     setProducts(data.payload);
   }
 
+
   return (
     <section className="shop-section-container">
       <div className="filtering-button-container">
