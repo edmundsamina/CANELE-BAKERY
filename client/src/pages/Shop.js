@@ -2,8 +2,6 @@ import React, {useState, useEffect }from "react";
 import "../styles/shop.css";
 import Card from "../components/Card/Card";
 
-
-
 function Shop() {
  const [products, setProducts] = useState([])
 
@@ -15,6 +13,7 @@ useEffect(()=>{
     setProducts(data.payload)
   } getProducts()
 }, [])
+
 
   return (
     <section className="shop-section-container">
