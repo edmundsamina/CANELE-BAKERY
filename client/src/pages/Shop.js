@@ -31,6 +31,7 @@ function Shop() {
     setProducts(data.payload);
   }
 
+ 
 
   return (
     <section className="shop-section-container">
@@ -88,7 +89,7 @@ function Shop() {
         {products
           .filter((one, index) => index < 8)
           .map((one) => {
-            return <Card img={one.image} title={one.name} price={one.price} />;
+            return <Card id={one._id} img={one.image} title={one.name} price={one.price} />;
           })}
       </div>
     </section>

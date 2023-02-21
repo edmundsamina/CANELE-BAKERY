@@ -1,6 +1,6 @@
 import './App.css';
 import {Route, Routes} from 'react-router-dom'
-
+import { ShoppingCartContextProvider } from '../../ShoppingCartContext/ShoppingCartContext';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Home from '../../pages/Home';
@@ -12,17 +12,19 @@ import Basket from '../../pages/Basket';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/basket" element={<Basket />} />
-      </Routes>
-      <Footer/>
-    </div>
+    <ShoppingCartContextProvider>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/basket" element={<Basket />} />
+        </Routes>
+        <Footer />
+      </div>
+    </ShoppingCartContextProvider>
   );
 }
 
