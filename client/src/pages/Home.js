@@ -57,10 +57,7 @@ function Home() {
             quiches that will satisfy any craving. In addition to our baked
             goods, we serve premium coffee and tea to pair with your treats.
             Whether you're stopping by for a quick morning pastry or a leisurely
-            afternoon snack, we have something for everyone. We take pride in
-            providing the most authentic French baking experience in town, and
-            we can't wait to share our passion for baking with you. Come visit
-            us and experience the delicious taste of our bakery today!
+            afternoon snack, we have something for everyone.
           </p>
         </div>
       </section>

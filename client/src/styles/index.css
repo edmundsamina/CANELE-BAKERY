@@ -91,9 +91,9 @@ p, h1, h2, h3, h4, h5, h6 {
    --titleFont: 'Yeseva';
    --textFontLight: 'Grotesk-Light';
    --textFontMedium: 'Grotesk-Medium';
-   --mainHeadingSizeMediumScreen: 5rem;
+   --mainHeadingSizeMediumScreen: 4rem;
    --sectionTitleSizeMediumScreen: 3rem;
-   --headingSizeMediumScreen: 1.8rem;
+   --headingSizeMediumScreen: 1.5rem;
    --subHeadingSizeMediumScreen: 1.5rem;
    --paragraphTextMediumScreen: 1.1rem;
    --captionSmallMedium: 0.6rem;

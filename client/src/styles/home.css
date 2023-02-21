@@ -15,7 +15,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(255, 255, 255,0), rgb(255, 255, 255,0.2), rgb(255, 255, 255, 0.4), rgb(255, 255, 255,0.6));    flex-basis: 40%;
+    background: linear-gradient(to right, rgb(255, 255, 255,0), rgb(255, 255, 255,0.2), rgb(255, 255, 255, 0.4), rgb(255, 255, 255,0.6));    
+    flex-basis: 45%;
 }
 
 h1{
@@ -23,11 +24,13 @@ h1{
     font-size: var(--mainHeadingSize);
     font-family: var(--titleFont);
     font-weight: 100;
+   
 }
 
 .hero-section-paragraph{
     color: var(--mainDark);
     font-family: var(--textFontMedium);
+    text-align: left;
     font-size: var(--subHeadingSize);
     width: 75%;
     line-height: 1.3;
@@ -43,7 +46,7 @@ h1{
 }
 
 .button{
-    width: 48%;
+    width: 45%;
     height: 50%;
     font-size: var(--subHeadingSize);
     font-family: var(--textFontMedium);
@@ -116,6 +119,7 @@ h1{
     width:70%;
     font-family: var(--textFontMedium);
     font-size: var( --paragraphText);
+    line-height: 1.3;
 }
 
 
@@ -157,7 +161,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    line-height: 1.3;
 }
 
 .discover-text-title{
