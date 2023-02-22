@@ -4,7 +4,8 @@
     background-image: url('../assets/images/canele-bakery-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    background-position: center;
+    height: 100vh;
     display: flex;
     justify-content: flex-end;
 
@@ -15,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(255, 255, 255,0), rgb(255, 255, 255,0.2), rgb(255, 255, 255, 0.4), rgb(255, 255, 255,0.6));    
+    background: linear-gradient(to right, rgb(255, 255, 255,0), rgb(255, 255, 255,0.2), rgb(255, 255, 255, 0.4), rgb(255, 255, 255,0.7));    
     flex-basis: 45%;
 }
 
@@ -71,13 +72,13 @@ h1{
 
 }
 
-@media only screen and (max-width: 1720px) {
+@media only screen and (max-width: 1200px) {
     h1{
         font-size: var(--mainHeadingSizeMediumScreen);
     } 
 
     .hero-section-paragraph, .button{
-        font-size: var( --headingSizeMediumScreen);
+        font-size: var( --subHeadingSizeMediumScreen);
     
     
     }
@@ -107,7 +108,6 @@ h1{
     justify-content: flex-start;
     padding-top: 50px;
     align-items: center;
-    gap: 20px;
 }
 
 .about-title{
@@ -123,7 +123,7 @@ h1{
 }
 
 
-@media only screen and (max-width: 1720px) {
+@media only screen and (max-width: 1200px) {
     .about-title{
         font-size: var(--sectionTitleSizeMediumScreen);
     } 
@@ -135,7 +135,7 @@ h1{
     }
 
     .about-text-container{
-       background-size: 65%;
+       background-size:65%;
 }}
 
 
@@ -153,21 +153,21 @@ h1{
 
 .discover-text-container, .discover-pastries, .discover-breads, .discover-sweet-endings{
     height: 65%;
-    width: 30%;
+    width: 25%;
 
 }
 
 .discover-text-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    line-height: 1.3;
+line-height: 1.3;
+gap: 20px;
 }
 
 .discover-text-title{
     font-family: var(--titleFont);
     font-weight: 100;
-    font-size: var( --sectionTitleSize);
+    font-size: var( --headingSize);
     text-align: start;
     line-height: 1;
 }
@@ -207,12 +207,12 @@ width: 90%;
 
 }
 
-@media only screen and (max-width: 1720px) {
+@media only screen and (max-width: 1200px) {
     .discover-text-title{
-        font-size: var(--sectionTitleSizeMediumScreen);
+        font-size: var( --headingSizeMediumScreen);
     } 
     .discover-text-paragraph, .discover-image-subtitle{
-        font-size: var(--subHeadingSizeMediumScreen);
+        font-size: var(--paragraphTextMediumScreen);
     
     
  }
