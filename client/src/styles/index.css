@@ -80,10 +80,10 @@ p, h1, h2, h3, h4, h5, h6 {
   --titleFont: 'Yeseva';
   --textFontLight: 'Grotesk-Light';
   --textFontMedium: 'Grotesk-Medium';
-  --mainHeadingSize: 6rem;
-  --sectionTitleSize: 4rem;
-  --headingSize: 2.25rem;
-  --subHeadingSize: 2rem;
+  --mainHeadingSize: 4.5rem;
+  --sectionTitleSize: 3rem;
+  --headingSize: 2.5rem;
+  --subHeadingSize: 1.5rem;
   --paragraphText: 1.4rem;
   --captionSmall: 0.8rem;
 
@@ -91,10 +91,10 @@ p, h1, h2, h3, h4, h5, h6 {
    --titleFont: 'Yeseva';
    --textFontLight: 'Grotesk-Light';
    --textFontMedium: 'Grotesk-Medium';
-   --mainHeadingSizeMediumScreen: 4rem;
-   --sectionTitleSizeMediumScreen: 3rem;
-   --headingSizeMediumScreen: 1.5rem;
-   --subHeadingSizeMediumScreen: 1.5rem;
+   --mainHeadingSizeMediumScreen: 3.5rem;
+   --sectionTitleSizeMediumScreen: 2.6rem;
+   --headingSizeMediumScreen: 1.6rem;
+   --subHeadingSizeMediumScreen: 1.3rem;
    --paragraphTextMediumScreen: 1.1rem;
    --captionSmallMedium: 0.6rem;
 

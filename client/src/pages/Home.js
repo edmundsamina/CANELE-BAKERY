@@ -54,10 +54,8 @@ function Home() {
             every item on our menu is made with care and attention to detail. We
             offer a variety of both sweet and savory options, including delicate
             macarons, indulgent eclairs, delectable fruit tarts, and savory
-            quiches that will satisfy any craving. In addition to our baked
-            goods, we serve premium coffee and tea to pair with your treats.
-            Whether you're stopping by for a quick morning pastry or a leisurely
-            afternoon snack, we have something for everyone.
+            quiches that will satisfy any craving. 
+          
           </p>
         </div>
       </section>
@@ -88,7 +86,7 @@ function Home() {
             src={pastries}
             alt="basket will with delicious pastries sprinkled with powdered sugar"
           />
-          <h4 className="discover-image-subtitle">MOUTHWATERING PASTRIES</h4>
+          <h4 className="discover-image-subtitle">BUTTERY PASTRIES</h4>
         </div>
 
         <div className="discover-breads">
