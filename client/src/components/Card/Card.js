@@ -18,9 +18,11 @@ export default function Card(props) {
       <div className="card-info">
         <div className="card-text">
           <h4 className="card-title">{props.title}</h4>
-          <p className="card-price">{CURRENCY_FORMATTER.format(props.price)}</p>
         </div>
+        <div className="card-text">
+        <p className="card-price">{CURRENCY_FORMATTER.format(props.price)}</p>
         <button className="card-button"onClick={()=>{increaseCartQuantity(props.id, props)}}>ADD <img className='basket-image' src={basketImg} alt='shopping basket icon'/></button>
+        </div> 
       </div>
     </div>
   );
