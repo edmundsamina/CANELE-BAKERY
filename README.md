@@ -7,14 +7,6 @@
 **[DEMO LINK](https://canele-bakery.netlify.app/)**
 
 <br/>
-
-# **_App-Demo-Sprint-One_**
-
-[<img src=".\public\demo-home.gif" width="250" height="480"/>](demo-home.gif)
-
-<br/>
-
-
 <br />
 
 ## List of Contents
