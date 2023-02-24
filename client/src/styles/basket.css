@@ -95,6 +95,12 @@
 }
 
 
+.no-items-text{
+    font-size: var(--subHeadingSize);
+    font-family: var(--textFontLight);
+    font-weight: 100;
+
+
 .basket-title-price-container{
     display: flex;
     flex-direction: column;
@@ -118,4 +124,5 @@
 .basket-title{
     font-size: var( --sectionTitleSizeMediumScreen);
 }
+
 }
