@@ -7,6 +7,8 @@
 **[DEMO LINK](https://canele-bakery.netlify.app/)**
 
 <br/>
+
+![alt text]('./client/src/assets/canele bakery screenshot.png)
 <br />
 
 ## List of Contents
