@@ -8,9 +8,7 @@ function Basket() {
   const navigate = useNavigate();
   const [totalCost, setTotalCost] = useState(0);
 
-
   const { cartItems } = useShoppingCart();
-
 
   const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
     currency: "GBP",
@@ -36,25 +34,36 @@ function Basket() {
     <section className="basket-container">
       <div className="basket-items-container">
         <h3 className="basket-title">Shopping Cart</h3>
-        {cartItems.map((item) => {
-          return (
-            <BasketItem
-              key={item.id}
-              title={item.title}
-              quantity={item.quantity}
-              img={item.img}
-              price={CURRENCY_FORMATTER.format(item.price)}
-              id={item.id}
-              totalPrice={CURRENCY_FORMATTER.format(item.price * item.quantity)}
-            />
-          );
-        })}
+        {cartItems.length !== 0 ? (
+          cartItems.map((item) => {
+            return (
+              <BasketItem
+                key={item.id}
+                title={item.title}
+                quantity={item.quantity}
+                img={item.img}
+                price={CURRENCY_FORMATTER.format(item.price)}
+                id={item.id}
+                totalPrice={CURRENCY_FORMATTER.format(
+                  item.price * item.quantity
+                )}
+              />
+            );
+          })
+        ) : (
+          <div className="basket-item">
+            <h4 className="no-items-text">You have nothing in your shopping cart.</h4>
+          </div>
+        )}
       </div>
       <div className="subtotal-checkout-container">
         <p className="subtotal">
           Subtotal<span>{CURRENCY_FORMATTER.format(totalCost)}</span>
         </p>
-        <button onClick={() => navigate("/checkout")} className="checkout-button">
+        <button
+          onClick={() => navigate("/checkout")}
+          className="checkout-button"
+        >
           Checkout
         </button>
       </div>

@@ -90,3 +90,9 @@
     border: none;
     cursor: pointer;
 }
+
+.no-items-text{
+    font-size: var(--subHeadingSize);
+    font-family: var(--textFontLight);
+    font-weight: 100;
+}
