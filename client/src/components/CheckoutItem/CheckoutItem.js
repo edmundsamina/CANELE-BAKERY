@@ -12,13 +12,13 @@ export default function CheckoutItem(props) {
       <div className="checkout-text-container">
         <p>{props.totalPrice}</p>
         <p className="checkout-quantity">{props.quantity}</p>
-        <p
+        <span className="remove-button"
           onClick={() => {
             removeFromCart(props.id);
           }}
         >
           Remove
-        </p>
+        </span>
       </div>
     </div>
   );

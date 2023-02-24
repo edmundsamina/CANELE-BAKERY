@@ -16,8 +16,11 @@ function BasketItem(props) {
     <div className="basket-item">
       <div className="img-name-container">
         <img className="basket-img" src={props.img} alt={props.title} />
-        <h4 className="item-name">{props.title}</h4>
+        <div className="basket-title-price-container">
+          <h4 className="item-name">{props.title}</h4>
         <p>{props.price}</p>
+        </div>
+        
       </div>
 
       <div className="quantity">
