@@ -35,14 +35,14 @@ font-family: var(--textFontMedium);
 
 /*footer*/
 footer{
-
+  
     background-color: var(--mainHighLight);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
     font-family: var(--titleFont);
-    font-weight:lighter
+    font-weight:lighter;
 }
 
 .footer-item{

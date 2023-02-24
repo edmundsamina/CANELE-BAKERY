@@ -1,0 +1,191 @@
+/*-----checkout page CSS-----*/
+*:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.checkout {
+  padding-top: 5vh;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 30px;
+  padding-top: 5vh;
+  width: 75%;
+  min-height: 80vh;
+}
+
+.checkout-container h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: var(--titleFont);
+  font-weight: lighter;
+}
+
+/*-----Checkout forms CSS OPEN-----*/
+
+.checkout-forms-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.email-section,
+.payment,
+.checkout-items-container {
+  height: max-content;
+  background-color: white;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.checkout-forms-container button {
+  width: 100%;
+  height: 50px;
+  font-size: var(--subHeadingSize);
+  font-family: var(--textFontMedium);
+  border: none;
+  cursor: pointer;
+  background-color: var(--mainDark);
+  color: var(--mainBackground);
+  margin-top: 20px;
+}
+
+.checkout-forms-container input {
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+}
+
+/*card details CSS*/
+.card-details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.card-number {
+  width: 70%;
+}
+
+.card-number input {
+  width: 100%;
+  border: none;
+}
+
+.card-security-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.card-security {
+  width: 40%;
+}
+.card-security input {
+  width: 70%;
+  border: none;
+  padding: 0;
+}
+
+/*Text*/
+.edit,
+.payment h3, .payment p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.email-form p, .payment p {
+    text-align: left;
+    font-size: var(--captionSmall);
+}
+
+.email {
+  text-align: left;
+}
+.edit {
+  cursor: pointer;
+}
+
+.form-flex-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-flex-row label {
+  width: 100%;
+}
+
+.billing-address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*-----Checkout forms CSS CLOSED-----*/
+.email-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*-----Checkout items CSS-----*/
+
+.checkout-items-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkout-items-container p {
+   font-family: var(--textFontMedium);
+    font-size: var(--paragraphTextMediumScreen);
+ 
+}
+
+
+.checkout-item {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-img {
+  width: 30%;
+}
+
+.checkout-cost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-img-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.checkout-text-container{
+    text-align: left;
+}
+
+.checkout-text-container :last-child{
+    cursor: pointer;
+}
+
+.checkout-item-name{
+    font-family: var(--titleFont);
+}
+
+.checkout-total {
+    font-weight: bolder;
+}
