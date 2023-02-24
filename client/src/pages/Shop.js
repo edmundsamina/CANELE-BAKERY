@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/shop.css";
 import Card from "../components/Card/Card";
-
+import gif from '../assets/loader g-i-f.gif'
 function Shop() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false)
   const [allButtonState, setAllButtonState] = useState(true)
   const [breadButtonState, setBreadButtonState] = useState(false)
   const [pastryButtonState, setPastryButtonState] = useState(false);
@@ -16,8 +17,12 @@ function Shop() {
         "https://projectcanelebakery.onrender.com/products"
       );
       const data = await response.json();
-      console.log(data);
-      setProducts(data.payload);
+      const shuffledData = data.payload.sort(() => Math.random() - 0.5);
+
+      setProducts(shuffledData);
+      setTimeout(() => {
+        setLoading(true);
+      }, 2000)
     }
     getProducts();
   }, []);
@@ -27,8 +32,14 @@ function Shop() {
       `https://projectcanelebakery.onrender.com/products/${category}`
     );
     const data = await response.json();
-    console.log(data);
-    setProducts(data.payload);
+    const shuffledData = data.payload.sort(() => Math.random() - 0.5);
+
+      setProducts(shuffledData);
+    setTimeout(() => {
+      setLoading(true);
+    }, 2000)
+  
+
   }
 
  
@@ -43,6 +54,7 @@ function Shop() {
             setAllButtonState(true);
             setPastryButtonState(false);
             setCakesButtonState(false);
+            setLoading(false)
           }}
           className={allButtonState ? "btn-active" : "btn-inactive"}
         >
@@ -55,6 +67,8 @@ function Shop() {
             setAllButtonState(false);
             setPastryButtonState(false);
             setCakesButtonState(false);
+            setLoading(false);
+
           }}
           className={breadButtonState ? "btn-active" : "btn-inactive"}
         >
@@ -67,6 +81,8 @@ function Shop() {
             setAllButtonState(false);
             setPastryButtonState(true);
             setCakesButtonState(false);
+            setLoading(false)
+
           }}
           className={pastryButtonState ? "btn-active" : "btn-inactive"}
         >
@@ -79,19 +95,24 @@ function Shop() {
             setAllButtonState(false);
             setPastryButtonState(false);
             setCakesButtonState(true);
+            setLoading(false);
           }}
           className={cakesButtonState ? "btn-active" : "btn-inactive"}
         >
           CAKES
         </button>
       </div>
-      <div className="shop-card-container">
-        {products
-          .filter((one, index) => index < 8)
+
+      {
+        loading ? <div className="shop-card-container">
+        {products.filter((one, index) => index < 8)
           .map((one) => {
             return <Card id={one._id} img={one.image} title={one.name} price={one.price} />;
           })}
-      </div>
+      </div> : <div className="loader-container"><img className="gif" src={gif} alt="gif"/>
+</div>
+      }
+      
     </section>
   );
 }

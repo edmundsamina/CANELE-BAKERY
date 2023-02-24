@@ -14,7 +14,7 @@ nav{
 .nav-links-list{
     display: flex;
     list-style: none;
-    font-size: var(--paragraphText);
+    font-size: var(--navText);
     gap:15px;
     
 }

@@ -1,6 +1,6 @@
 .contact-container{
     width: 100%;
-    height:80vh;
+    height:90vh;
     display: flex;
     gap:40px;
     
@@ -41,3 +41,15 @@
     
 }
 
+@media only screen and (max-width: 1600px) {
+    .contact-text-header{
+        font-size: var(--headingSizeMediumScreen);
+     
+    }
+    
+    .contact-text{
+        font-size: var( --paragraphTextMediumScreen);
+       
+        
+    }
+}

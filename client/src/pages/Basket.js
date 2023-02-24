@@ -8,7 +8,9 @@ function Basket() {
   const navigate = useNavigate();
   const [totalCost, setTotalCost] = useState(0);
 
+
   const { cartItems } = useShoppingCart();
+
 
   const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
     currency: "GBP",
