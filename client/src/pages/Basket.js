@@ -6,6 +6,7 @@ import { useShoppingCart } from "../ShoppingCartContext/ShoppingCartContext";
 function Basket() {
   const [totalCost, setTotalCost] = useState(0);
 
+
   const {cartItems}=useShoppingCart();
 
   
@@ -39,7 +40,7 @@ function Basket() {
       <div className="basket-items-container">
       <h3 className="basket-title">Shopping Cart</h3>
      { cartItems.map(item => {
-        return <BasketItem key = {item.id} title={item.title} quantity={item.quantity} img={item.img} price={CURRENCY_FORMATTER.format(item.price)} id={item.id} totalPrice={CURRENCY_FORMATTER.format(item.price*item.quantity)}/>
+        return <BasketItem  key = {item.id} title={item.title} quantity={item.quantity} img={item.img} price={CURRENCY_FORMATTER.format(item.price)} id={item.id} totalPrice={CURRENCY_FORMATTER.format(item.price*item.quantity)}/>
      })}
  
 
