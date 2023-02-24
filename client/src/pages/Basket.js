@@ -52,7 +52,7 @@ function Basket() {
       </div>
       <div className="subtotal-checkout-container">
         <p className="subtotal">
-          Subtotal<span>{CURRENCY_FORMATTER.format(totalCost)}</span>
+          Subtotal:<span>{CURRENCY_FORMATTER.format(totalCost)}</span>
         </p>
         <button onClick={() => navigate("/checkout")} className="checkout-button">
           Checkout

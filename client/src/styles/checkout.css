@@ -51,8 +51,8 @@
 .checkout-forms-container button {
   width: 100%;
   height: 50px;
-  font-size: var(--subHeadingSize);
-  font-family: var(--textFontMedium);
+  font-size: var(--subHeadingSizeMediumScreen);
+ 
   border: none;
   cursor: pointer;
   background-color: var(--mainDark);
@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(125, 125, 125);
 }
 
 .card-number {
@@ -147,9 +147,9 @@
   flex-direction: column;
   gap: 10px;
 }
-.checkout-items-container p {
-   font-family: var(--textFontMedium);
-    font-size: var(--paragraphTextMediumScreen);
+.checkout-text-container p, .checkout-cost {
+   font-family: var(--textFontLight);
+    font-size: 1.2rem;
  
 }
 
@@ -183,9 +183,15 @@
 }
 
 .checkout-item-name{
-    font-family: var(--titleFont);
+    font-family: var(--textFontLight);
+    font-size: var(--paragraphTextMediumScreen);
 }
 
 .checkout-total {
-    font-weight: bolder;
+    font-family: var(--textFontMedium);
+}
+
+.remove-button {
+  color: rgb(201, 0, 17);
+   font-family: var(--textFontMedium);
 }
