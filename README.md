@@ -8,7 +8,14 @@
 
 <br/>
 
----
+# **_App-Demo-Sprint-One_**
+
+[<img src=".\public\demo-home.gif" width="250" height="480"/>](demo-home.gif)
+[<img src="./public\demo-addPet.gif" width="250" height="480"/>](demo-addPet.gif)
+[<img src="./public\demo-modal.gif" width="250" height="480"/>](demo-modal.gif)
+[<img src="./public\demo-colour.gif" width="250" height="480"/>](demo-colour.gif)
+<br/>
+
 
 <br />
 
@@ -37,14 +44,6 @@ This small side projected was completed over a one week sprint, but was staggere
 ---
 
 <br />
-
-# **_App-Demo_**
-
-[<img src=".\public\demo-home.gif" width="250" height="480"/>](demo-home.gif)
-[<img src="./public\demo-addPet.gif" width="250" height="480"/>](demo-addPet.gif)
-[<img src="./public\demo-modal.gif" width="250" height="480"/>](demo-modal.gif)
-[<img src="./public\demo-colour.gif" width="250" height="480"/>](demo-colour.gif)
-<br/>
 
 <br />
 
