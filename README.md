@@ -8,7 +8,7 @@
 
 <br/>
 
-![alt text]('./client/src/assets/canele bakery screenshot.png)
+![alt text](./client/src/assets/canele bakery screenshot.png)
 <br />
 
 ## List of Contents
